@@ -36,3 +36,14 @@ https://www.stevestreeting.com/2022/09/20/git-submodules-tips-for-jetbrains-ides
 2. Select the ``platform/`` directory of submodule
 3. Set VCS to ``Git``
 4. Ok and apply
+
+### Update submodule
+Either by command line
+````shell
+git submodule update --init --recursive --remote
+````
+* ``--recursive`` to apply for all submodules
+* ``--remote`` supports for unconventional default branch
+* ``--init`` to init any uninitialized submodules. Can be ignored after that
+
+Either by GUI from IntelliJ Git support: right click on submodule dir > Git > Pull
