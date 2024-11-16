@@ -26,3 +26,13 @@ Based on https://blog.alllex.me/posts/2023-08-31-git-submodule-composite-build/
         implementation 'com.qnhant:platform'
     }
     ````
+
+## Optional steps
+### IntelliJ Git support for submodule
+https://www.stevestreeting.com/2022/09/20/git-submodules-tips-for-jetbrains-ides/
+
+``Settings > Version Control > Directory Mappings``. Click `+` then:
+1. Choose Directory
+2. Select the ``platform/`` directory of submodule
+3. Set VCS to ``Git``
+4. Ok and apply
